@@ -1,6 +1,20 @@
 <?php
 
 /**
+ * Implements hook_help().
+ */
+function addthis_help($route_name) {
+  switch ($route_name) {
+    case 'help.page.addthis':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>';
+      $output .= t('The AddThis module defines AddThis field type for the Field module. A AddThis field may contain a button, toolbox, sharecount or customized sharing tool using <a href="http://addthis.com/">AddThis.com</a>.');
+      $output .= '</p>';
+      return $output;
+  }
+}
+
+/**
  * Implements hook_theme().
  */
 function addthis_theme() {

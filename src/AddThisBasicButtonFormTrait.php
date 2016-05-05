@@ -56,7 +56,4 @@ trait AddThisBasicButtonFormTrait {
 
     return $element;
   }
-
-
-
 }

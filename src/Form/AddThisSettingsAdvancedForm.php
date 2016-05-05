@@ -110,7 +110,6 @@ class AddThisSettingsAdvancedForm extends ConfigFormBase {
       '#default_value' => $config->get('addthis_widget_include'),
     );
 
-
     return parent::buildForm($form, $form_state);
   }
 
@@ -131,6 +130,4 @@ class AddThisSettingsAdvancedForm extends ConfigFormBase {
 
     parent::submitForm($form, $form_state);
   }
-
 }
-

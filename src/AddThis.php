@@ -68,6 +68,4 @@ class AddThis {
     $service_json_url_key = isset($service_json_url_key) ? $service_json_url_key : 'http://cache.addthiscdn.com/services/v1/sharing.en.json';
     return check_url($service_json_url_key);
   }
-
-
 }

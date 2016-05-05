@@ -159,34 +159,22 @@ class AddThisScriptManager {
     //Always load the script with domready flag.
     $fragment[] = 'domready=1';
 
-
     $element['#attached']['library'][] = 'addthis/addthis.widget';
     $addThisConfig = $this->getAddThisConfig();
     $addThisShareConfig = $this->getAddThisShareConfig();
-
-
 
     $options = [
       'fragment' => implode('&', $fragment),
       'external' => TRUE,
     ];
 
-
     $widget_url = $adv_config->get('addthis_widget_js_url');
     $widgetURL = URL::fromUri($widget_url, $options)->toString();
-
 
     $element['#attached']['drupalSettings']['addThisWidget'] = [
       'widgetScript' => $widgetURL,
       'config' => $addThisConfig,
       'share' => $addThisShareConfig,
     ];
-
-
   }
-
-
 }
-
-
-

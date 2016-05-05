@@ -156,7 +156,3 @@ block.settings.addthis_block:
         extra_css:
            type: string
            label: 'Extra CSS'
-
-
-
-

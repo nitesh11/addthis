@@ -5,6 +5,7 @@ addthis.settings:
     _title: 'AddThis'
   requirements:
     _permission: 'administer addthis settings'
+
 addthis.settings.advanced:
   path: '/admin/config/user-interface/addthis/advanced'
   defaults:
